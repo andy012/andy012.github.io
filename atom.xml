@@ -3,9 +3,9 @@
   <title><![CDATA[Andy's Blog]]></title>
   
   <link href="/atom.xml" rel="self"/>
-  <link href="http://yoursite.com/"/>
+  <link href="http://blog.duhongguang.com/"/>
   <updated>2015-11-23T09:31:53.000Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://blog.duhongguang.com/</id>
   
   <author>
     <name><![CDATA[Andy Doo]]></name>
@@ -16,8 +16,8 @@
   
   <entry>
     <title><![CDATA[Hello World]]></title>
-    <link href="http://yoursite.com/2015/11/23/hello-world/"/>
-    <id>http://yoursite.com/2015/11/23/hello-world/</id>
+    <link href="http://blog.duhongguang.com/2015/11/23/hello-world/"/>
+    <id>http://blog.duhongguang.com/2015/11/23/hello-world/</id>
     <published>2015-11-23T09:31:53.000Z</published>
     <updated>2015-11-23T09:31:53.000Z</updated>
     <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css"><p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
@@ -38,8 +38,8 @@
   
   <entry>
     <title><![CDATA[CMD]]></title>
-    <link href="http://yoursite.com/2015/11/22/spring_stateless_state_auth/"/>
-    <id>http://yoursite.com/2015/11/22/spring_stateless_state_auth/</id>
+    <link href="http://blog.duhongguang.com/2015/11/22/spring_stateless_state_auth/"/>
+    <id>http://blog.duhongguang.com/2015/11/22/spring_stateless_state_auth/</id>
     <published>2015-11-22T07:30:16.000Z</published>
     <updated>2015-11-23T09:31:53.000Z</updated>
     <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css"><h1 id="&#x6B22;&#x8FCE;&#x4F7F;&#x7528;-cmd-markdown-&#x7F16;&#x8F91;&#x9605;&#x8BFB;&#x5668;">&#x6B22;&#x8FCE;&#x4F7F;&#x7528; Cmd Markdown &#x7F16;&#x8F91;&#x9605;&#x8BFB;&#x5668;</h1><hr>
@@ -141,18 +141,18 @@ Bob--&gt;Alice: I am good thanks!</span><br></pre></td></tr></table></figure>
     
     </summary>
     
-      <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
+      <category term="Java" scheme="http://blog.duhongguang.com/tags/Java/"/>
     
-      <category term="Spring Boot" scheme="http://yoursite.com/tags/Spring-Boot/"/>
+      <category term="Spring Boot" scheme="http://blog.duhongguang.com/tags/Spring-Boot/"/>
     
-      <category term="PROJECTS" scheme="http://yoursite.com/categories/PROJECTS/"/>
+      <category term="PROJECTS" scheme="http://blog.duhongguang.com/categories/PROJECTS/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Spring Boot Stateless Authority and Session Authority]]></title>
-    <link href="http://yoursite.com/2015/11/21/repositories/spring_stateless_state_auth/"/>
-    <id>http://yoursite.com/2015/11/21/repositories/spring_stateless_state_auth/</id>
+    <link href="http://blog.duhongguang.com/2015/11/21/repositories/spring_stateless_state_auth/"/>
+    <id>http://blog.duhongguang.com/2015/11/21/repositories/spring_stateless_state_auth/</id>
     <published>2015-11-21T07:30:16.000Z</published>
     <updated>2015-11-24T04:32:35.000Z</updated>
     <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css"><h2 id="1-session-authority">1. Session Authority</h2><ul>
@@ -171,11 +171,11 @@ run with `gradle run`</span><br></pre></td></tr></table></figure>]]></content>
     
     </summary>
     
-      <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
+      <category term="Java" scheme="http://blog.duhongguang.com/tags/Java/"/>
     
-      <category term="Spring Boot" scheme="http://yoursite.com/tags/Spring-Boot/"/>
+      <category term="Spring Boot" scheme="http://blog.duhongguang.com/tags/Spring-Boot/"/>
     
-      <category term="repositories" scheme="http://yoursite.com/categories/repositories/"/>
+      <category term="repositories" scheme="http://blog.duhongguang.com/categories/repositories/"/>
     
   </entry>
   
