@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://blog.duhongguang.com/"/>
-  <updated>2015-12-27T14:32:56.000Z</updated>
+  <updated>2016-01-09T16:35:31.000Z</updated>
   <id>http://blog.duhongguang.com/</id>
   
   <author>
@@ -13,6 +13,73 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[A predictive model for task run-time resource usage]]></title>
+    <link href="http://blog.duhongguang.com/2016/01/10/Cousera/A%20predictive%20model%20for%20task%20run-time%20resource%20usage/"/>
+    <id>http://blog.duhongguang.com/2016/01/10/Cousera/A predictive model for task run-time resource usage/</id>
+    <published>2016-01-10T07:30:16.000Z</published>
+    <updated>2016-01-09T16:35:31.000Z</updated>
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css"><h1 id="1-describe-your-sample">1 Describe your sample</h1><ul>
+<li>a:Describe the study population</li>
+</ul>
+<p>I want to  build a  predictive model for task run-time CPU resource usage. This model uses statistical regression models to get the estimated CPU resource allocation for the next run epoch.  </p>
+<ul>
+<li>b:Report the level of analysis studied</li>
+</ul>
+<p>It&#x2019;s a group  analysis studied.</p>
+<ul>
+<li>c:Report the number of observations in the data set.</li>
+</ul>
+<p>It&#x2019;s only one observations in the data set. It&#x2019;s the CPU usage.</p>
+<ul>
+<li>d:Describe your data analytic sample </li>
+</ul>
+<p>The sample is the task run-time CPU usage in any epoch. We collect every epochs of a task&#x2019;s run-time as the sample.</p>
+<h1 id="2-describe-the-procedures-that-were-used-to-collect-the-data">2 Describe the procedures that were used to collect the data</h1><ul>
+<li>a:Report the study design that generated that data</li>
+</ul>
+<p>We use the experiment to generate those datas. We use one second as a epoch. In other words, we collect one data per second.</p>
+<ul>
+<li>b:Describe the original purpose of the data collection</li>
+</ul>
+<p>We want to know the CPU usage in every epochs of a task&#x2019;s run-time and hope that we can build a model to predict the CPU usage in next epoch base the some epoch ago.</p>
+<ul>
+<li>c:Describe how the data were collected</li>
+</ul>
+<p>We use the supervisory program to collect the data.</p>
+<ul>
+<li>d:Report when the data were collected</li>
+</ul>
+<p>We collected the data when the task is run.</p>
+<ul>
+<li>e: Report where the data were collected</li>
+</ul>
+<p>The data is save in the data.txt file with the <key,value> pairs, and the key is the NO. ,the value is the  task run-time CPU resource usage in this epoch.</key,value></p>
+<h1 id="3-describe-your-variables">3 Describe your variables</h1><ul>
+<li>a:Describe what your explanatory and response variables measured</li>
+</ul>
+<p>The explanatory variables are ten CPU usages in ten task run-time epochs and the response variable is  the CPU usage in next task run-time epoch.</p>
+<ul>
+<li><p>b:Describe the response scales for your explanatory and response variables.</p>
+<p>??</p>
+</li>
+</ul>
+<ul>
+<li><p>c:Describe how you managed your explanatory and response variables.</p>
+<p>We use ten CPU usages in ten task run-time epochs as a explanatory variable and the next epoch CPU usage as the response variable.</p>
+</li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css"><h1 id="1-describe-your-sampl]]>
+    </summary>
+    
+      <category term="Coursera" scheme="http://blog.duhongguang.com/tags/Coursera/"/>
+    
+      <category term="Coursera" scheme="http://blog.duhongguang.com/categories/Coursera/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Spring Boot Stateless Authority and Session Authority]]></title>
