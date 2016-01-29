@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     
-    <title>Archives: 2016 | Andy&#39;s Blog</title>
+    <title>LaTex插入图片 | Andy&#39;s Blog</title>
     
     <link rel="alternative" href="/atom.xml" title="Andy&#39;s Blog" type="application/atom+xml">
     
@@ -42,52 +42,124 @@
         
     </header>
     <div class="site-body">
-        
+        <div class="global-width">
+    <article class="article" data-layout="post" data-slug="tools/LaTeX-insert-image">
+        <div class="article-content">
+            
+            
+            <header class="article-header">
+                <div class="article-meta">
+                    <a href="/2015/11/22/tools/LaTeX-insert-image/" class="article-date">
+  <time datetime="2015-11-22T09:44:02.000Z">2015-11-22</time>
+</a>
+                    
+  <div class="article-category categories">
+    <a class="category-link" href="/categories/articles/">articles</a>
+  </div>
+
+                    
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/LaTex/">LaTex</a></li></ul>
+
+                </div>
+                
+    <h1 class="article-title" itemprop="name">
+      <a href="/2015/11/22/tools/LaTeX-insert-image/">LaTex插入图片</a>
+    </h1>
+
+            </header>
+            
+            <div class="article-body">
+                
+                    <div id="toc" class="toc-article">
+                        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1单栏插入图片"><span class="toc-text">1、单栏插入图片</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2单栏插入多张图片"><span class="toc-text">2、单栏插入多张图片</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3插入图片到双栏"><span class="toc-text">3、插入图片到双栏</span></a></li></ol>
+                    </div>
+                
+                <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css"><p>&#x672C;&#x6587;&#x4E3B;&#x8981;&#x8BB2;&#x8FF0;&#x4F7F;&#x7528;graphics&#x5B8F;&#x5305;&#x63D2;&#x5165;&#x56FE;&#x7247;&#xFF0C;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x652F;&#x6301;pdf&#x3001;eps&#x3001;&#x4EE5;&#x53CA;&#x5176;&#x4ED6;&#x56FE;&#x7247;&#x683C;&#x5F0F;&#x7684;&#x6587;&#x4EF6;</p>
+<h1 id="1&#x5355;&#x680F;&#x63D2;&#x5165;&#x56FE;&#x7247;">1&#x3001;&#x5355;&#x680F;&#x63D2;&#x5165;&#x56FE;&#x7247;</h1><p>&#x5728;&#x9879;&#x76EE;&#x76EE;&#x5F55;&#x4E0B;&#x6709;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x540D;&#x4E3A; vm.png&#xFF0C;&#x9996;&#x5148;&#x662F;&#x8981;&#x5F15;&#x5165;graphics&#x5305;</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">%&#x6CE8;&#x610F;&#x5305;&#x8981;&#x52A0;&#x5728;\begin{document}&#x4E4B;&#x524D;
+\usepackage{graphicx}
+\begin{document}
+
+%-----
+%-----
+%-----
+
+\begin{figure}
+\centering
+\includegraphics[width=4cm,angle=0]{vm}
+\caption{ hypervisor virtual machine architecture}
+\label{guiFig}
+\end{figure}</span><br></pre></td></tr></table></figure>
+<p>&#x6548;&#x679C;&#x5982;&#x56FE;&#x4E2D;&#x7684;&#x56FE;&#x7247;&#x4E2D;&#x7684;Fig 1&#xFF1A;</p>
+<p><img src="http://7xpk17.com1.z0.glb.clouddn.com/vm-docker.png" alt="&#x56FE;&#x7247;"></p>
+<h1 id="2&#x5355;&#x680F;&#x63D2;&#x5165;&#x591A;&#x5F20;&#x56FE;&#x7247;">2&#x3001;&#x5355;&#x680F;&#x63D2;&#x5165;&#x591A;&#x5F20;&#x56FE;&#x7247;</h1><p>&#x5728;&#x9879;&#x76EE;&#x76EE;&#x5F55;&#x4E0B;&#x6709;&#x4E24;&#x4E2A;&#x6587;&#x4EF6; vm.png&#x548C;docker.png&#xFF0C;&#x9700;&#x8981;&#x5F15;&#x5165;&#x4E24;&#x4E2A;&#x5305;&#xFF1A;graphics&#xFF0C;subfigure</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">%&#x6CE8;&#x610F;&#x5305;&#x8981;&#x52A0;&#x5728;\begin{document}&#x4E4B;&#x524D;
+\usepackage{graphicx}
+\usepackage{subfigure}
+
+
+\begin{document}
+
+%-----
+%-----
+%-----
+
+\begin{figure}
+\centering
+\subfigure[vm] 
+{\includegraphics[width=4cm]{vm}}
+\subfigure[1] 
+{\includegraphics[width=4cm]{docker}}
+\caption{Comparison of (a) hypervisor and (b) container-based deployments.}
+\label{guiFig}
+\end{figure}</span><br></pre></td></tr></table></figure>
+<p>&#x7ED3;&#x679C;&#x5982;&#x56FE;&#x4E2D;Fig 2</p>
+<h1 id="3&#x63D2;&#x5165;&#x56FE;&#x7247;&#x5230;&#x53CC;&#x680F;">3&#x3001;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x5230;&#x53CC;&#x680F;</h1><p>&#x53EA;&#x9700;&#x8981;&#x5C06;begin{figure*}&#x6539;&#x4E3A;begin{figure}</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">
+\begin{figure*}
+
+%
+%
+%
+
+\end{figure*}</span><br></pre></td></tr></table></figure>
+<p>&#x7ED3;&#x679C;&#x662F;&#x53CC;&#x680F;</p>
+
+            </div>
+        </div>
+    </article>
 
     
-    <div class="global-width">
-        <section class="archives">
-            
-                <article class="archive-article archive-type-post">
-    <div class="archive-article-inner" >
-        <header class="archive-article-header">
-            <a href="/2016/01/22/translations/Open-Source-Service-Discovery/" class="archive-article-year">
-  <time datetime="2016-01-22T09:44:02.000Z">2016.</time>
-</a><!--
-            --><a href="/2016/01/22/translations/Open-Source-Service-Discovery/" class="archive-article-date">
-  <time datetime="2016-01-22T09:44:02.000Z">01.22</time>
-</a>
-            
-    <h1 class="archive-article-title" itemprop="name">
-      <a href="/2016/01/22/translations/Open-Source-Service-Discovery/">开源服务发现（翻译）</a>
-    </h1>
-
-        </header>
-    </div>
-</article>
-            
-                <article class="archive-article archive-type-post">
-    <div class="archive-article-inner" >
-        <header class="archive-article-header">
-            <a href="/2016/01/10/Cousera/A predictive model for task run-time resource usage/" class="archive-article-year">
-  <time datetime="2016-01-10T07:30:16.000Z">2016.</time>
-</a><!--
-            --><a href="/2016/01/10/Cousera/A predictive model for task run-time resource usage/" class="archive-article-date">
-  <time datetime="2016-01-10T07:30:16.000Z">01.10</time>
-</a>
-            
-    <h1 class="archive-article-title" itemprop="name">
-      <a href="/2016/01/10/Cousera/A predictive model for task run-time resource usage/">A predictive model for task run-time resource usage</a>
-    </h1>
-
-        </header>
-    </div>
-</article>
-            
-        </section>
+    
+<nav class="article-nav">
+  
+    <a href="/2016/01/10/Cousera/A predictive model for task run-time resource usage/" id="article-nav-newer" class="article-nav-link-wrap prev">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
         
-    </div>
+          A predictive model for task run-time resource usage
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2015/11/21/repositories/spring_stateless_state_auth/" id="article-nav-older" class="article-nav-link-wrap next">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Spring Boot Stateless Authority and Session Authority</div>
+    </a>
+  
+</nav>
 
+    
+
+    
+    <section id="comments" class="article-comments">
+        <div id="disqus_thread">
+            <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </div>
+    </section>
+    
+</div>
 
     </div>
     <footer class="site-footer">
@@ -158,11 +230,13 @@
     <script>
         var disqus_shortname = 'andy012';
         
+        var disqus_url = 'http://blog.duhongguang.com/2015/11/22/tools/LaTeX-insert-image/';
+        
         (function(){
             var dsq = document.createElement('script');
             dsq.type = 'text/javascript';
             dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
     </script>
