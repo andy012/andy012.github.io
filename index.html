@@ -87,10 +87,6 @@
       
         <p>服务发现是大多数分布式系统和面向服务的架构的重要组成部分，这个问题看上去很简单，这不就是在多台主机组成的中客户端如何发现提供某个服务的主机的IP地址和端口号么？</p>
 <p>通常情况下，你或许最开始只是用配置文件来解决这个问题，但是，当你部署更多的服务时，解决这个问题就变得非常复杂。在运行的系统中，由于人为的或自动的集群扩展、新的服务被部署以及主机宕机或被替换，服务的位置（IP和端口号）变化会非常频繁。</p>
-<p>在这些场景中，为了不中断正在运行的服务，动态服务注册和发现变得越来越重要。</p>
-<p>目前服务发现已经有很多不同的解决方案，并且正在不断改进。本篇博客将会讨论一些开源的和公认的解决方案以此来探究动态服务注册和发现是如何工作的。具体而言，我们将会讨论这些解决方案是如何处理存储的强或弱一致性、运行时依赖、客户端集成以及这些解决方案在这些问题上面是如何做出权衡的。</p>
-<p>我们将会从一些强一致性的开源项目开始，比如 <a href="http://zookeeper.apache.org/">Zookeeper</a>, <a href="https://github.com/ha/doozer">Doozer</a> 和 <a href="https://github.com/coreos/etcd">Etcd</a> ，这些项目一般是做为服务协调的组件，但是也通常被用来进行服务注册和服务发现。</p>
-<p>之后我们将会介绍一些专门为服务注册和发现的解决方案，我们将会测试<a href="http://nerds.airbnb.com/smartstack-service-discovery-cloud/">Airbnb’s SmartStack</a>, <a href="https://github.com/Netflix/eureka">Netflix’s Eureka</a>, <a href="http://bitly.github.io/nsq/">Bitly’s NSQ</a>, <a href="http://serfdom.io/">Serf</a>, <a href="http://labs.spotify.com/tag/dns/">Spotify and DNS</a> 和 <a href="https://github.com/skynetservices/skydns">SkyDNS</a>。</p>
         
           <p class="article-more-link">
             <a href="/2016/01/22/translations/Open-Source-Service-Discovery/#more">Read More</a>
@@ -103,61 +99,6 @@
       <footer class="article-footer">
         
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/服务发现/">服务发现</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/服务注册/">服务注册</a></li></ul>
-
-      </footer>
-    
-  </div>
-  
-</article>
-
-
-    
-      <article id="post-tools/LaTeX-insert-image" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/11/22/tools/LaTeX-insert-image/">LaTex插入图片</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      <a href="/2015/11/22/tools/LaTeX-insert-image/" class="article-date">
-  <time datetime="2015-11-22T09:44:02.000Z" itemprop="datePublished">2015-11-22</time>
-</a>
-      
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/articles/">articles</a>
-  </div>
-
-      
-        <div class="article-comment-link-wrap">
-          <a href="http://blog.duhongguang.com/2015/11/22/tools/LaTeX-insert-image/#disqus_thread" class="article-comment-link">评论</a>
-        </div>
-      
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>本文主要讲述使用graphics宏包插入图片，插入图片支持pdf、eps、以及其他图片格式的文件</p>
-<h1 id="1、单栏插入图片">1、单栏插入图片</h1><p>在项目目录下有一个文件名为 vm.png，首先是要引入graphics包</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">%&#27880;&#24847;&#21253;&#35201;&#21152;&#22312;\begin&#123;document&#125;&#20043;&#21069;&#10;\usepackage&#123;graphicx&#125;&#10;\begin&#123;document&#125;&#10;&#10;%-----&#10;%-----&#10;%-----&#10;&#10;\begin&#123;figure&#125;&#10;\centering&#10;\includegraphics[width=4cm,angle=0]&#123;vm&#125;&#10;\caption&#123; hypervisor virtual machine architecture&#125;&#10;\label&#123;guiFig&#125;&#10;\end&#123;figure&#125;</span><br></pre></td></tr></table></figure>
-        
-          <p class="article-more-link">
-            <a href="/2015/11/22/tools/LaTeX-insert-image/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    
-    
-      <footer class="article-footer">
-        
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/LaTex/">LaTex</a></li></ul>
 
       </footer>
     
@@ -253,16 +194,7 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <p>写在前面：文章中主要包括有状态登录和无状态登录的一些基本概念，文章主要基于Java的技术栈，由于本文只是一个Demo，目前没有解决有状态登录的分布式情况，需要解决这样的情况，需要考虑建立Session服务器。</p>
-<h2 id="1_Session_Authority（有状态登录）">1 Session Authority（有状态登录）</h2><p>服务器所维护的与客户交互活动的信息称为状态信息，不保存任何状态信息的服务器称为无状态服务器（stateless server），反之则称为有状态服务器（stateful server）。</p>
-<ul>
-<li><p><strong>Session</strong>:Sesion是服务器保存会话信息的实体，一个session在server通过一个sessionid来标识的，在一个server是不会有两个相同sessionid的session。在服务端sessionid作为会话的唯一标示，在客户端，sessionid以cookie的形式存储，当同一个会话的后序请求来时都将这个sessionid放在request 的header中(也就是我们说的cookie)，这样就可以来验证这个request是否与之前的request是同一个会话。这是以session来解决HTTP协议每次请求完成一个完整的TCP链接的生命周期而不能识别用户身份的基本原理。   </p>
-</li>
-<li><p><strong>Cookie</strong>: 一个会话的生命周期与服务器端的session保存的生命周期和客户端cookie的生命周期有关。在服务器端，（这里以Java为例），request.getsession()，当已有一个session与前request相关时就返回对这个session的引用，当没有时就生成一个，可以设置session的生命周期。对于cookie的生命周期，如果不设置过期时间，则表示这个cookie生命周期为浏览器会话期间，只要关闭浏览器窗口，cookie就消失了。这种生命期为浏览会话期的cookie被称为会话cookie。会话cookie一般不保存在硬盘上而是保存在内存里。如果设置了过期时间，浏览器就会把cookie保存到硬盘上，关闭后再次打开浏览器，这些cookie依然有效直到超过设定的过期时间。存储在硬盘上的cookie可以在不同的浏览器进程间共享，比如两个IE窗口。而对于保存在内存的cookie，不同的浏览器有不同的处理方式。   </p>
-<p>  设置cookie的保存时间:</p>
-</li>
-</ul>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cookie.setmaxage  #设置为0时，会马上在浏览器上删除指定的cookie</span><br><span class="line">cookie.setmaxage  #设置为-1时，代表关闭当前浏览器即失效。</span><br></pre></td></tr></table></figure>
+        <p>写在前面：文章中主要包括有状态登录和无状态登录的一些基本概念，并且使用Spring Boot构建一个demo系统，本系统包括有状态登录和无状态登录两个模块。文章主要基于Java的技术栈，由于本文只是一个Demo，目前没有解决有状态登录的分布式情况，需要解决这样的情况，需要考虑建立Session服务器。<br>
         
           <p class="article-more-link">
             <a href="/2015/11/21/repositories/spring_stateless_state_auth/#more">Read More</a>

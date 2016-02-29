@@ -2,6 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.duhongguang.com/about.html</loc>
+    <lastmod>2016-02-29T05:26:30.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.duhongguang.com/2015/11/21/repositories/spring_stateless_state_auth/</loc>
+    <lastmod>2016-02-29T05:08:51.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.duhongguang.com/2016/01/22/translations/Open-Source-Service-Discovery/</loc>
+    <lastmod>2016-02-29T05:06:16.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://blog.duhongguang.com/2015/08/22/article/linux_tomcat_80_permission_denied/</loc>
     <lastmod>2016-02-29T05:03:21.000Z</lastmod>
   </url>
@@ -19,26 +34,6 @@
   <url>
     <loc>http://blog.duhongguang.com/tags/index.html</loc>
     <lastmod>2016-02-29T03:33:32.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.duhongguang.com/2016/01/22/translations/Open-Source-Service-Discovery/</loc>
-    <lastmod>2016-01-29T08:42:44.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.duhongguang.com/2015/11/22/tools/LaTeX-insert-image/</loc>
-    <lastmod>2016-01-29T08:42:22.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.duhongguang.com/2015/11/21/repositories/spring_stateless_state_auth/</loc>
-    <lastmod>2016-01-29T08:41:49.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.duhongguang.com/about.html</loc>
-    <lastmod>2015-11-24T06:02:55.000Z</lastmod>
   </url>
   
 </urlset>
