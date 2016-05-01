@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>RPC和RMI的区别 - Andy&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="RPC和RMI的区别（Difference Between RPC and RMI）RPC vs RMI
+　　RPC (Remote Procedure Call) and RMI (Remote Method Invocation) are two mechanisms that allow the user to invoke or call processes that will run o">
+<meta property="og:type" content="article">
+<meta property="og:title" content="RPC和RMI的区别">
+<meta property="og:url" content="http://blog.duhongguang.com/2016/03/22/translations/DifferenceBetweenRPCandRMI/index.html">
+<meta property="og:site_name" content="Andy's Blog">
+<meta property="og:description" content="RPC和RMI的区别（Difference Between RPC and RMI）RPC vs RMI
+　　RPC (Remote Procedure Call) and RMI (Remote Method Invocation) are two mechanisms that allow the user to invoke or call processes that will run o">
+<meta property="og:updated_time" content="2016-05-01T09:37:29.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="RPC和RMI的区别">
+<meta name="twitter:description" content="RPC和RMI的区别（Difference Between RPC and RMI）RPC vs RMI
+　　RPC (Remote Procedure Call) and RMI (Remote Method Invocation) are two mechanisms that allow the user to invoke or call processes that will run o">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link href="/webfonts/ptserif/main.css" rel='stylesheet' type='text/css'>
+  <link href="/webfonts/source-code-pro/main.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <header id="header">
+  <div id="header-outer" class="outer">
+    <div id="header-inner" class="inner">
+      <a id="main-nav-toggle" class="nav-icon" href="javascript:;"></a>
+      <a id="logo" class="logo" href="/"></a>
+      <nav id="main-nav">
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/categories">Categories</a>
+        
+          <a class="main-nav-link" href="/tags">Tags</a>
+        
+          <a class="main-nav-link" href="/about.html">About</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        <div id="search-form-wrap">
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://blog.duhongguang.com"></form>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+    <section id="main" class="outer"><article id="post-translations/DifferenceBetweenRPCandRMI" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      RPC和RMI的区别
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      <a href="/2016/03/22/translations/DifferenceBetweenRPCandRMI/" class="article-date">
+  <time datetime="2016-03-22T09:44:02.000Z" itemprop="datePublished">2016-03-22</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/translations/">translations</a>
+  </div>
+
+      
+        <div class="article-comment-link-wrap">
+          <a href="http://blog.duhongguang.com/2016/03/22/translations/DifferenceBetweenRPCandRMI/#disqus_thread" class="article-comment-link">评论</a>
+        </div>
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css"><h2 id="rpc&#x548C;rmi&#x7684;&#x533A;&#x522B;difference-between-rpc-and-rmi">RPC&#x548C;RMI&#x7684;&#x533A;&#x522B;&#xFF08;Difference Between RPC and RMI&#xFF09;</h2><p><strong>RPC vs RMI</strong></p>
+<p>&#x3000;&#x3000;RPC (Remote Procedure Call) and RMI (Remote Method Invocation) are two mechanisms that allow the user to invoke or <a href="http://www.differencebetween.net/business/finance-business-2/difference-between-call-and-put/" target="_blank" rel="external">call</a> processes that will run on a different <a href="http://www.differencebetween.net/science/difference-between-human-and-computer/" target="_blank" rel="external">computer</a> from the one the user is using. The main difference between the two is the approach or paradigm used. RMI uses an object oriented paradigm where the user needs to know the object and the method of the object he needs to invoke. In comparison, RPC isn&#x2019;t object oriented and doesn&#x2019;t deal with objects. Rather, it calls specific subroutines that are already established.</p>
+<p>&#x3000;&#x3000;RPC&#xFF08;&#x8FDC;&#x7A0B;&#x8FC7;&#x7A0B;&#x8C03;&#x7528;&#xFF09;&#x548C;RMI&#xFF08;&#x8FDC;&#x7A0B;&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#xFF09;&#x662F;&#x4E24;&#x79CD;&#x53EF;&#x4EE5;&#x8BA9;&#x7528;&#x6237;&#x4ECE;&#x4E00;&#x53F0;&#x7535;&#x8111;&#x8C03;&#x7528;&#x4E0D;&#x540C;&#x7535;&#x8111;&#x4E0A;&#x9762;&#x7684;&#x65B9;&#x6CD5;&#x7684;&#x7684;&#x673A;&#x5236;&#xFF08;&#x4E5F;&#x53EF;&#x4EE5;&#x79F0;&#x4F5C;&#x89C4;&#x8303;&#x3001;&#x534F;&#x8BAE;&#xFF09;&#x3002;&#x4E24;&#x8005;&#x7684;&#x4E3B;&#x8981;&#x4E0D;&#x540C;&#x662F;&#x4ED6;&#x4EEC;&#x7684;&#x4F7F;&#x7528;&#x65B9;&#x5F0F;&#x6216;&#x8005;&#x79F0;&#x4F5C;&#x8303;&#x5F0F;&#xFF0C;RMI&#x4F7F;&#x7528;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x8303;&#x5F0F;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x7528;&#x6237;&#x9700;&#x8981;&#x77E5;&#x9053;&#x4ED6;&#x8C03;&#x7528;&#x7684;&#x5BF9;&#x8C61;&#x548C;&#x5BF9;&#x8C61;&#x4E2D;&#x7684;&#x65B9;&#x6CD5;&#xFF1B;RPC&#x4E0D;&#x662F;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x4E5F;&#x4E0D;&#x80FD;&#x5904;&#x7406;&#x5BF9;&#x8C61;&#xFF0C;&#x800C;&#x662F;&#x8C03;&#x7528;&#x5DF2;&#x7ECF;&#x5EFA;&#x7ACB;&#x4E86;&#x5177;&#x4F53;&#x7684;&#x5B50;&#x7A0B;&#x5E8F;&#x3002;</p>
+<a id="more"></a>
+<p>&#x3000;&#x3000;RPC is a relatively old <a href="http://www.differencebetween.net/category/technology/protocols-formats/" target="_blank" rel="external">protocol</a> that is based on the C language, thus inheriting its paradigm. With RPC, you get a procedure call that looks pretty much like a local call. RPC handles the complexities involved with passing the call from the local to the remote computer. RMI does the very same thing; handling the complexities of passing along the invocation from the local to the remote computer. But instead of passing a procedural call, RMI passes a reference to the object and the method that is being called. RMI was developed by <a href="http://www.differencebetween.net/technology/difference-between-python-and-java/" target="_blank" rel="external">Java</a> and uses its virtual machine. Its use is therefore exclusive to Java applications for calling methods on remote computers.</p>
+<p>&#x3000;&#x3000;RPC&#x662F;&#x4E00;&#x4E2A;&#x57FA;&#x4E8E;C&#x8BED;&#x8A00;&#x7684;&#x76F8;&#x5BF9;&#x8F83;&#x65E7;&#x7684;&#x534F;&#x8BAE;&#xFF0C;&#x56E0;&#x6B64;&#x4E5F;&#x5C31;&#x7EE7;&#x627F;&#x4E86;C&#x8BED;&#x8A00;&#x7684;&#x8303;&#x5F0F;&#xFF0C;&#x4F7F;&#x7528;RPC&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x50CF;&#x8C03;&#x7528;&#x4E00;&#x4E2A;&#x672C;&#x5730;&#x65B9;&#x6CD5;&#x4E00;&#x6837;&#x8C03;&#x7528;&#x8FDC;&#x7A0B;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x7531;RPC&#x5904;&#x7406;&#x8C03;&#x7528;&#x8FC7;&#x7A0B;&#x7684;&#x590D;&#x6742;&#x64CD;&#x4F5C;&#xFF0C;RMI&#x7684;&#x529F;&#x80FD;&#x548C;RPC&#x57FA;&#x672C;&#x4E00;&#x6837;&#x3002;&#x4F46;&#x662F;&#x548C;RPC&#x53EA;&#x4F20;&#x8F93;&#x4E00;&#x4E2A;&#x8FC7;&#x7A0B;&#x8C03;&#x7528;&#x4E0D;&#x540C;&#xFF0C;RMI&#x9700;&#x8981;&#x4F20;&#x8F93;&#x5BF9;&#x8C61;&#x7684;&#x5F15;&#x7528;&#x4EE5;&#x53CA;&#x8C03;&#x7528;&#x7684;&#x65B9;&#x6CD5;&#x3002;RMI&#x662F;&#x7528;Java&#x5F00;&#x53D1;&#x7684;&#xFF0C;&#x8FD0;&#x884C;&#x5728;Java&#x865A;&#x62DF;&#x673A;&#x4E0A;&#xFF0C;&#x56E0;&#x6B64;&#x5B83;&#x7684;&#x7528;&#x9014;&#x662F;&#x8C03;&#x7528;&#x8FDC;&#x7A0B;&#x8BA1;&#x7B97;&#x673A;&#x4E0A;&#x7684;java&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x3002;</p>
+<p>&#x3000;&#x3000;In the end, RPC and RMI are just two means of achieving the same exact thing. It all comes down to what language you are using and which paradigm you are used to. Using the object oriented RMI is the better approach between the two, especially with larger programs as it provides a cleaner code that is easier to track down once something goes wrong. Use of RPC is still widely accepted, especially when any of the <a href="http://www.differencebetween.net/miscellaneous/difference-between-alternative-and-rock/" target="_blank" rel="external">alternative</a> remote procedural protocols are not an option.</p>
+<p>&#x3000;&#x3000;&#x6700;&#x540E;&#xFF0C;RPC&#x548C;RMI&#x53EA;&#x662F;&#x5904;&#x7406;&#x540C;&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#x7684;&#x4E0D;&#x540C;&#x65B9;&#x5F0F;&#xFF0C;&#x8FD9;&#x4E00;&#x5207;&#x90FD;&#x5F52;&#x7ED3;&#x4E8E;&#x4F60;&#x6240;&#x4F7F;&#x7528;&#x7684;&#x8BED;&#x8A00;&#x548C;&#x4F60;&#x6240;&#x4F7F;&#x7528;&#x7684;&#x8303;&#x5F0F;&#x3002;&#x4F7F;&#x7528;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;RMI&#x662F;&#x4E24;&#x8005;&#x4E4B;&#x95F4;&#x7684;&#x66F4;&#x597D;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x7279;&#x522B;&#x662F;&#x5927;&#x578B;&#x7A0B;&#x5E8F;&#xFF0C;&#x4F7F;&#x7528;RMI&#x4EE3;&#x7801;&#x66F4;&#x7B80;&#x6D01;&#xFF0C;&#x66F4;&#x5BB9;&#x6613;&#x8FFD;&#x8E2A;bug&#x3002;RPC&#x76EE;&#x524D;&#x4F9D;&#x7136;&#x662F;&#x88AB;&#x5E7F;&#x6CDB;&#x63A5;&#x53D7;&#x7684;&#xFF0C;&#x5C24;&#x5176;&#x662F;&#x5F53;&#x65E0;&#x6CD5;&#x9009;&#x62E9;&#x4EFB;&#x4F55;&#x7684;&#x53EF;&#x66FF;&#x4EE3;&#x7684;&#x8FDC;&#x7A0B;&#x7A0B;&#x5E8F;&#x534F;&#x8BAE;&#x65F6;&#x5019;&#x3002;</p>
+<p>Summary:</p>
+<p>1.RMI is object oriented while RPC isn&#x2019;t<br>2.RPC is C bases while RMI is Java only<br>3.RMI invokes methods while RPC invokes functions<br>4.RPC is antiquated while RMI is the future</p>
+<p>&#x603B;&#x7ED3;&#xFF1A;</p>
+<p>1&#x3001;RMI&#x662F;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#xFF0C;&#x800C;RPC&#x4E0D;&#x662F;</p>
+<p>2&#x3001;RPC&#x662F;&#x57FA;&#x4E8E;C&#x8BED;&#x8A00;&#x7684;&#xFF0C;&#x800C;RMI&#x662F;&#x4EC5;&#x4EC5;&#x57FA;&#x4E8E;Java&#x7684;</p>
+<p>3&#x3001;RMI&#x8C03;&#x7528;&#x65B9;&#x6CD5;&#xFF0C;&#x800C;RPC&#x8C03;&#x7528;&#x51FD;&#x6570;</p>
+<p>4&#x3001;RPC&#x662F;&#x8FC7;&#x65F6;&#x7684;&#xFF0C;&#x800C;RMI&#x662F;&#x672A;&#x6765;</p>
+<p>&#x539F;&#x6587;&#x5730;&#x5740;: <a href="http://www.differencebetween.net/technology/protocols-formats/difference-between-rpc-and-rmi/#ixzz47OPXuhEv" target="_blank" rel="external">Difference Between RPC and RMI | Difference Between | RPC vs RMI</a> <a href="http://www.differencebetween.net/technology/protocols-formats/difference-between-rpc-and-rmi/#ixzz47OPXuhEv" target="_blank" rel="external">http://www.differencebetween.net/technology/protocols-formats/difference-between-rpc-and-rmi/#ixzz47OPXuhEv</a></p>
+
+      
+    </div>
+    
+      <div class="article-toc">
+        <h3>目录</h3>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#rpc和rmi的区别difference-between-rpc-and-rmi"><span class="toc-number">1.</span> <span class="toc-text">RPC和RMI的区别（Difference Between RPC and RMI）</span></a></li></ol>
+      </div>
+    
+    
+      <footer class="article-footer">
+        
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/RMI/">RMI</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/RPC/">RPC</a></li></ul>
+
+      </footer>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/01/22/translations/Open-Source-Service-Discovery/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">开源服务发现（翻译）&nbsp;<span>&gt;</span></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+</section>
+    <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 Andy Doo&nbsp;
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>, theme by <a href="http://github.com/ppoffice">PPOffice</a>
+    </div>
+  </div>
+</footer>
+    
+<script>
+  var disqus_shortname = 'andy012';
+  
+  var disqus_url = 'http://blog.duhongguang.com/2016/03/22/translations/DifferenceBetweenRPCandRMI/';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="/js/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+
+
+<script src="/js/script.js" type="text/javascript"></script>
+  </div>
+</body>
+</html>
