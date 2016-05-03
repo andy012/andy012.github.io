@@ -2,8 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.duhongguang.com/2016/03/21/article/java_byte_code_iinc/</loc>
+    <lastmod>2016-05-03T03:22:46.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://blog.duhongguang.com/2016/03/22/translations/DifferenceBetweenRPCandRMI/</loc>
-    <lastmod>2016-05-01T09:37:29.000Z</lastmod>
+    <lastmod>2016-05-01T09:40:31.000Z</lastmod>
   </url>
   
   <url>
