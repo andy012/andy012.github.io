@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.duhongguang.com/2016/03/22/translations/DifferenceBetweenRPCandRMI/</loc>
+    <lastmod>2016-05-14T03:27:26.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://blog.duhongguang.com/2016/03/21/article/java_byte_code_iinc/</loc>
     <lastmod>2016-05-14T03:25:18.000Z</lastmod>
   </url>
@@ -9,11 +14,6 @@
   <url>
     <loc>http://blog.duhongguang.com/2015/11/22/article/LaTeX-insert-image/</loc>
     <lastmod>2016-05-14T03:23:52.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.duhongguang.com/2016/03/22/translations/DifferenceBetweenRPCandRMI/</loc>
-    <lastmod>2016-05-03T03:27:57.000Z</lastmod>
   </url>
   
   <url>
