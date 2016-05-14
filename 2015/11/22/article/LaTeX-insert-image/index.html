@@ -6,21 +6,21 @@
   <title>LaTex插入图片 - Andy&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="本文主要讲述使用graphics宏包插入图片，插入图片支持pdf、eps、以及其他图片格式的文件
-1、单栏插入图片在项目目录下有一个文件名为 vm.png，首先是要引入graphics包
+1、单栏插入图片在项目目录下有一个文件名为 vm.png，首先是要引入graphicx包
 1%&amp;#27880;&amp;#24847;&amp;#21253;&amp;#35201;&amp;#21152;&amp;#22312;\begin&amp;#123;document&amp;#125;&amp;#20043;&amp;#21069;&amp;#10;\usepacka">
 <meta property="og:type" content="article">
 <meta property="og:title" content="LaTex插入图片">
 <meta property="og:url" content="http://blog.duhongguang.com/2015/11/22/article/LaTeX-insert-image/index.html">
 <meta property="og:site_name" content="Andy's Blog">
 <meta property="og:description" content="本文主要讲述使用graphics宏包插入图片，插入图片支持pdf、eps、以及其他图片格式的文件
-1、单栏插入图片在项目目录下有一个文件名为 vm.png，首先是要引入graphics包
+1、单栏插入图片在项目目录下有一个文件名为 vm.png，首先是要引入graphicx包
 1%&amp;#27880;&amp;#24847;&amp;#21253;&amp;#35201;&amp;#21152;&amp;#22312;\begin&amp;#123;document&amp;#125;&amp;#20043;&amp;#21069;&amp;#10;\usepacka">
 <meta property="og:image" content="http://7xpk17.com1.z0.glb.clouddn.com/vm-docker.png">
-<meta property="og:updated_time" content="2016-02-29T03:47:19.000Z">
+<meta property="og:updated_time" content="2016-05-14T03:23:52.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="LaTex插入图片">
 <meta name="twitter:description" content="本文主要讲述使用graphics宏包插入图片，插入图片支持pdf、eps、以及其他图片格式的文件
-1、单栏插入图片在项目目录下有一个文件名为 vm.png，首先是要引入graphics包
+1、单栏插入图片在项目目录下有一个文件名为 vm.png，首先是要引入graphicx包
 1%&amp;#27880;&amp;#24847;&amp;#21253;&amp;#35201;&amp;#21152;&amp;#22312;\begin&amp;#123;document&amp;#125;&amp;#20043;&amp;#21069;&amp;#10;\usepacka">
   
   
@@ -93,7 +93,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css"><p>&#x672C;&#x6587;&#x4E3B;&#x8981;&#x8BB2;&#x8FF0;&#x4F7F;&#x7528;graphics&#x5B8F;&#x5305;&#x63D2;&#x5165;&#x56FE;&#x7247;&#xFF0C;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x652F;&#x6301;pdf&#x3001;eps&#x3001;&#x4EE5;&#x53CA;&#x5176;&#x4ED6;&#x56FE;&#x7247;&#x683C;&#x5F0F;&#x7684;&#x6587;&#x4EF6;</p>
-<h1 id="1&#x5355;&#x680F;&#x63D2;&#x5165;&#x56FE;&#x7247;">1&#x3001;&#x5355;&#x680F;&#x63D2;&#x5165;&#x56FE;&#x7247;</h1><p>&#x5728;&#x9879;&#x76EE;&#x76EE;&#x5F55;&#x4E0B;&#x6709;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x540D;&#x4E3A; vm.png&#xFF0C;&#x9996;&#x5148;&#x662F;&#x8981;&#x5F15;&#x5165;graphics&#x5305;</p>
+<h1 id="1&#x5355;&#x680F;&#x63D2;&#x5165;&#x56FE;&#x7247;">1&#x3001;&#x5355;&#x680F;&#x63D2;&#x5165;&#x56FE;&#x7247;</h1><p>&#x5728;&#x9879;&#x76EE;&#x76EE;&#x5F55;&#x4E0B;&#x6709;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x540D;&#x4E3A; vm.png&#xFF0C;&#x9996;&#x5148;&#x662F;&#x8981;&#x5F15;&#x5165;graphicx&#x5305;</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">%&#x6CE8;&#x610F;&#x5305;&#x8981;&#x52A0;&#x5728;\begin{document}&#x4E4B;&#x524D;
 \usepackage{graphicx}
 \begin{document}
@@ -111,7 +111,7 @@
 <a id="more"></a>
 <p>&#x6548;&#x679C;&#x5982;&#x56FE;&#x4E2D;&#x7684;&#x56FE;&#x7247;&#x4E2D;&#x7684;Fig 1&#xFF1A;</p>
 <p><img src="http://7xpk17.com1.z0.glb.clouddn.com/vm-docker.png" alt="&#x56FE;&#x7247;"></p>
-<h1 id="2&#x5355;&#x680F;&#x63D2;&#x5165;&#x591A;&#x5F20;&#x56FE;&#x7247;">2&#x3001;&#x5355;&#x680F;&#x63D2;&#x5165;&#x591A;&#x5F20;&#x56FE;&#x7247;</h1><p>&#x5728;&#x9879;&#x76EE;&#x76EE;&#x5F55;&#x4E0B;&#x6709;&#x4E24;&#x4E2A;&#x6587;&#x4EF6; vm.png&#x548C;docker.png&#xFF0C;&#x9700;&#x8981;&#x5F15;&#x5165;&#x4E24;&#x4E2A;&#x5305;&#xFF1A;graphics&#xFF0C;subfigure</p>
+<h1 id="2&#x5355;&#x680F;&#x63D2;&#x5165;&#x591A;&#x5F20;&#x56FE;&#x7247;">2&#x3001;&#x5355;&#x680F;&#x63D2;&#x5165;&#x591A;&#x5F20;&#x56FE;&#x7247;</h1><p>&#x5728;&#x9879;&#x76EE;&#x76EE;&#x5F55;&#x4E0B;&#x6709;&#x4E24;&#x4E2A;&#x6587;&#x4EF6; vm.png&#x548C;docker.png&#xFF0C;&#x9700;&#x8981;&#x5F15;&#x5165;&#x4E24;&#x4E2A;&#x5305;&#xFF1A;graphicx&#xFF0C;subfigure</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">%&#x6CE8;&#x610F;&#x5305;&#x8981;&#x52A0;&#x5728;\begin{document}&#x4E4B;&#x524D;
 \usepackage{graphicx}
 \usepackage{subfigure}
