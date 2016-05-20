@@ -125,6 +125,59 @@ ga('send', 'pageview');
 
 
     
+      <article id="post-article/Spring-MVC-ajax-session-expired" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/04/21/article/Spring-MVC-ajax-session-expired/">Session超时登出功能</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      <a href="/2016/04/21/article/Spring-MVC-ajax-session-expired/" class="article-date">
+  <time datetime="2016-04-21T11:30:07.000Z" itemprop="datePublished">2016-04-21</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/article/">article</a>
+  </div>
+
+      
+        <div class="article-comment-link-wrap">
+          <a href="http://blog.duhongguang.com/2016/04/21/article/Spring-MVC-ajax-session-expired/#disqus_thread" class="article-comment-link">评论</a>
+        </div>
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>在Web项目中，有时需要处理用户登录后长期不操作页面的情况，需要使账户超时自动下线。这里介绍两种可行的方式，一种是后端处理，另一种是前端处理。<br>　　后端处理方式则是在服务器设置session的超时时间，超时则设置session无效，此时前端页面可能有两种请求方式，一种是刷新浏览器，这时只需要将刷新redirect到一个新的URL即可，比如<code>/login?error=expired</code>，另一种情况则是用户可能点击页面的某个按钮，触发了一个ajax请求，这时采用redirect是无效的，需要返回一定的错误码和错误信息，前端也需要加入相应的处理逻辑。<br>　　前端处理可以使用前端的JS去判断是否用户长时间不操作也面，需要解决用户打开多个tabs和多个windows的情况下。</p>
+        
+          <p class="article-more-link">
+            <a href="/2016/04/21/article/Spring-MVC-ajax-session-expired/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    
+    
+      <footer class="article-footer">
+        
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Filter/">Filter</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Spring-MVC/">Spring MVC</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/expired/">expired</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/logout/">logout</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/session/">session</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/timeout/">timeout</a></li></ul>
+
+      </footer>
+    
+  </div>
+  
+</article>
+
+
+    
       <article id="post-translations/DifferenceBetweenRPCandRMI" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
