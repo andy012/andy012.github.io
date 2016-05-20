@@ -67,6 +67,64 @@ ga('send', 'pageview');
   </div>
 </header>
     <section id="main" class="outer">
+      <article id="post-article/Bloom-Filter" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/04/22/article/Bloom-Filter/">布隆过滤器（Bloom filter）</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      <a href="/2016/04/22/article/Bloom-Filter/" class="article-date">
+  <time datetime="2016-04-22T09:44:02.000Z" itemprop="datePublished">2016-04-22</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/article/">article</a>
+  </div>
+
+      
+        <div class="article-comment-link-wrap">
+          <a href="http://blog.duhongguang.com/2016/04/22/article/Bloom-Filter/#disqus_thread" class="article-comment-link">评论</a>
+        </div>
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="1、基本概念">1、基本概念</h3><p>布隆过滤器（Bloom Filter）是1970年由布隆提出的，由<code>二进制矢量</code>和一系列的<code>hash函数</code>组成，布隆过滤器可以用于检索一个元素是否在一个集合中。它的优点是<code>空间效率</code>和<code>查询时间</code>都远远超过一般的算法，缺点是有一定的<code>误识别率</code>和<code>删除困难</code>。</p>
+<h3 id="2、算法描述">2、算法描述</h3><ul>
+<li>构造Bloom filter：初始状态时，Bloom Filter包含m位的位数组，每一位都置为0，并且包含k个hash函数（k远小于m），当一个元素加入集合时，通过k个hash函数将隔着 元素映射到m中的k个点，并把他们置为1。</li>
+<li>判断一个元素是否在结合中：</li>
+</ul>
+<p>(1) 如果经过k个hash函数映射到m的位置全部为1时，则元素<code>可能</code>存在<br>(2) 如果经过k个hash函数映射到m的位置至少有一个为0时，则元素<code>一定</code>不存在</p>
+        
+          <p class="article-more-link">
+            <a href="/2016/04/22/article/Bloom-Filter/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    
+    
+      <footer class="article-footer">
+        
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Bloom-Filter/">Bloom Filter</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/bit-map/">bit map</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/检索/">检索</a></li></ul>
+
+      </footer>
+    
+  </div>
+  
+</article>
+
+
+    
       <article id="post-translations/DifferenceBetweenRPCandRMI" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
